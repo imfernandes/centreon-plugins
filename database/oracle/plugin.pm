@@ -33,6 +33,7 @@ sub new {
 
     $self->{version} = '0.1';
     %{$self->{modes}} = (
+                	'testcommitt'      => 'database::oracle::mode::testcommit',
                          'asm-diskgroup-usage'      => 'database::oracle::mode::asmdiskgroupusage',
                          'connection-time'          => 'centreon::common::protocols::sql::mode::connectiontime',
                          'connected-users'          => 'database::oracle::mode::connectedusers',
